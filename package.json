@@ -1,0 +1,30 @@
+{
+  "name": "vuepress-login",
+  "version": "1.0.0",
+  "description": "Add user authorization for VuePress",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build",
+    "deploy": "bash deploy.sh",
+    "git": "bash git.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    "@vuepress/plugin-last-updated": "^1.5.2",
+    "axios": "^0.19.2",
+    "element-ui": "^2.13.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.2",
+    "v-dialogs": "^2.1.4",
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-copy-code": "^0.0.1"
+  },
+  "dependencies": {
+    "tcplayer": "^0.0.29",
+    "vuepress-plugin-comment": "^0.7.3"
+  }
+}

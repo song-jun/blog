@@ -1,0 +1,87 @@
+<!--
+ * @Description: 
+ * @Version: 
+ * @Autor: MrSong
+ * @Date: 2020-07-17 15:25:27
+ * @LastEditors: MrSong
+ * @LastEditTime: 2020-07-20 14:34:35
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
+  <meta charset="UTF-8">
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.8/skins/default/aliplayer-min.css" />
+  <script type="text/javascript" charset="utf-8"
+    src="https://g.alicdn.com/de/prismplayer/2.8.8/aliplayer-min.js"></script>
+  <title>使用JSAPI</title>
+</head>
+
+<body>
+  <h1>H5原生VIDEO</h1>
+  <video x5-video-player-fullscreen="true" preload="auto" x5-video-player-type="h5" x5-video-orientation="portraint"
+    width="100%" controls height="200" src="//player.alicdn.com/video/editor.mp4">
+  </video>
+  <h1>腾讯VIDEO</h1>
+  <div id="container"></div>
+  <p style="padding:10px">
+    <button type="button" class="btn btn-primary" onclick="player.play()">播放</button>
+    <button type="button" class="btn btn-success" onclick="player.pause()">暂停</button>
+  </p>
+  <h1>bilibili视频</h1>
+  <div style="position: relative; width: 100%;height: 250px;">
+    <iframe src="//player.bilibili.com/player.html?aid=27107052&cid=46709183&page=1&as_wide=1&high_quality=1&danmaku=0"
+      scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+      style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe>
+  </div>
+  <h1>bilibili视频 固定高度</h1>
+  <iframe style="width:100%;height:300px;border:1px solid #ddd;margin-top:20px"
+    src="https://xbeibeix.com/api/bilibili/biliplayer/?url=https://xbeibeix.com/api/bilibili/biliplayer/?url=https://www.bilibili.com/video/BV1px411b7rd?from=search&seid=12013251779785034524"
+    frameborder="0"></iframe>
+  <h1>bilibili视频 移动端适配</h1>
+  <div style="position: relative; padding: 30% 45%;">
+    <iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"
+      src="https://player.bilibili.com/player.html?cid=46709183&aid=27107052&page=1&as_wide=1&high_quality=1&danmaku=0"
+      frameborder="no" scrolling="no" framespacing="0" allowfullscreen="true"></iframe>
+  </div>
+  <h1>Aliplayer视频</h1>
+  <div id="player-con"></div>
+</body>
+<!-- 使用相对协议，同时支持http和https -->
+<script src='//vm.gtimg.cn/tencentvideo/txp/js/txplayer.js'></script>
+<script>
+  var player = new Txplayer({
+    containerId: 'container',
+    vid: 'l0539vqs140',
+    width: '100%',
+    height: screen.availHeight / 3
+  });
+  player.on('ready', () => {
+    console.log('player ready');
+  });
+  player.on('volumeChange', (volume) => {
+    console.log('player volumechange:', volume);
+  });
+  player.on('playStateChange', (state) => {
+    console.log('player playStateChange:', state);
+  });
+  var aliplayer = new Aliplayer({
+    id: "player-con",
+    source: "//player.alicdn.com/video/editor.mp4",
+    width: "100%",
+    height: "300px",
+    cover: 'https://img.alicdn.com/tps/TB1EXIhOFXXXXcIaXXXXXXXXXXX-760-340.jpg',
+    /* To set an album art, you must set 'autoplay' and 'preload' to 'false' */
+    autoplay: false,
+    preload: false,
+    isLive: false
+  }, function (player) {
+    console.log("The player is created");
+  });
+</script>
+
+</html>
