@@ -8,7 +8,7 @@
  */ 
 // 最好不要在本地访问页面，以免造成多域名重复推送问题
 (function() {
-  // return;
+  return;
   var bp = document.createElement("script");
   var curProtocol = window.location.protocol.split(":")[0];
   if (curProtocol === "https") {
