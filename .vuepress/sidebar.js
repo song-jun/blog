@@ -4,7 +4,7 @@
  * @Autor: MrSong
  * @Date: 2020-07-16 12:15:36
  * @LastEditors: MrSong
- * @LastEditTime: 2020-07-21 10:19:30
+ * @LastEditTime: 2020-07-21 16:44:35
  */
 // module.exports = {
 //   '/': [
@@ -72,6 +72,13 @@ module.exports = [
   //         ['/test', 'VuePressLogin']
   //     ]
   // },
+  {
+    title: "git使用",
+    collapsable: true,
+    children: [
+      ['/git', 'git命令']
+    ]
+  },
   {
     title: "网页端引用video",
     collapsable: true,

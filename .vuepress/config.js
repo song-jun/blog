@@ -4,7 +4,7 @@
  * @Autor: MrSong
  * @Date: 2020-07-16 12:15:36
  * @LastEditors: MrSong
- * @LastEditTime: 2020-07-21 15:32:16
+ * @LastEditTime: 2020-07-22 11:46:49
  */
 const nav = require('./navigator')
 const sidebar = require('./sidebar')
@@ -31,6 +31,7 @@ module.exports = {
     sidebar: sidebar,
     smoothScroll: true,
     url: 'http://www.songjun520.cn/images',
+    qqUrl:'http://wpa.qq.com/msgrd?v=3&uin=289097246&site=qq&menu=yes'
   },
   markdown: {
     lineNumbers: true

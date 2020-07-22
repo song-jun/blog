@@ -1,3 +1,22 @@
+## npm淘宝镜像
+
+```sh
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+## 安装http-server
+
+node启动本地服务(安装http-server)
+
+```js
+# 安装
+npm i http-server -g
+# 启动服务
+http-server
+# 启动服务并制定端口
+http-server -a 0.0.0.0 -p 8008
+```
+
 ## nodeJs 爬虫
 
 cheerio
