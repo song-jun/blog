@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>pip镜像下载模块 | 君陌离的博客</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.8/skins/default/aliplayer-min.css">
+    <script src="/assets/js/autopush-360.js"></script>
+    <script src="/assets/js/autopush-baidu.js"></script>
+    <script src="https://vm.gtimg.cn/tencentvideo/txp/js/txplayer.js"></script>
+    <script src="https://g.alicdn.com/de/prismplayer/2.8.8/aliplayer-min.js"></script>
+    <meta name="description" content="君陌离的博客">
+    <meta name="360-site-verification" content="95d9cb542ac47e58446549ed041f7c68">
+    <link rel="preload" href="/assets/css/0.styles.09765f82.css" as="style"><link rel="preload" href="/assets/js/app.3290b558.js" as="script"><link rel="preload" href="/assets/js/2.d8720c94.js" as="script"><link rel="preload" href="/assets/js/15.8859d65b.js" as="script"><link rel="prefetch" href="/assets/js/10.03547b7d.js"><link rel="prefetch" href="/assets/js/11.d6f4f461.js"><link rel="prefetch" href="/assets/js/12.ebf31d14.js"><link rel="prefetch" href="/assets/js/13.4c0aad7b.js"><link rel="prefetch" href="/assets/js/14.2fde69bc.js"><link rel="prefetch" href="/assets/js/16.44620d41.js"><link rel="prefetch" href="/assets/js/17.698f137c.js"><link rel="prefetch" href="/assets/js/18.79f2d54b.js"><link rel="prefetch" href="/assets/js/19.06719624.js"><link rel="prefetch" href="/assets/js/3.e5b25023.js"><link rel="prefetch" href="/assets/js/4.f134c154.js"><link rel="prefetch" href="/assets/js/5.43c8c030.js"><link rel="prefetch" href="/assets/js/6.d5bc0ab0.js"><link rel="prefetch" href="/assets/js/7.b5bcc4fa.js"><link rel="prefetch" href="/assets/js/8.941d1281.js"><link rel="prefetch" href="/assets/js/9.f2f19d75.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.09765f82.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/basic.png" alt="君陌离的博客" class="logo"> <span class="site-name can-hide">君陌离的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/html.html" class="nav-link">
+  前端基础
+</a></div><div class="nav-item"><a href="/node.html" class="nav-link">
+  nodeJs基础
+</a></div><div class="nav-item"><a href="/liunx.html" class="nav-link">
+  操作指令
+</a></div><div class="nav-item"><a href="/python.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  python入门
+</a></div><div class="nav-item"><a href="/sponsor.html" class="nav-link">
+  赞助
+</a></div><div class="nav-item"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=289097246&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  联系QQ
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  友情链接
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/html.html" class="nav-link">
+  前端基础
+</a></div><div class="nav-item"><a href="/node.html" class="nav-link">
+  nodeJs基础
+</a></div><div class="nav-item"><a href="/liunx.html" class="nav-link">
+  操作指令
+</a></div><div class="nav-item"><a href="/python.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  python入门
+</a></div><div class="nav-item"><a href="/sponsor.html" class="nav-link">
+  赞助
+</a></div><div class="nav-item"><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=289097246&amp;site=qq&amp;menu=yes" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  联系QQ
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  友情链接
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Home</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML基础知识</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>nodeJs基础</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>动态数据</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Js函数封装</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>操作指令</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>python入门</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/python.html" aria-current="page" class="active sidebar-link">python</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/python.html#pip镜像下载模块" class="sidebar-link">pip镜像下载模块</a></li><li class="sidebar-sub-header"><a href="/python.html#python启动本地服务" class="sidebar-link">python启动本地服务</a></li><li class="sidebar-sub-header"><a href="/python.html#python3基础语法" class="sidebar-link">python3基础语法</a></li><li class="sidebar-sub-header"><a href="/python.html#scrapy框架" class="sidebar-link">scrapy框架</a></li><li class="sidebar-sub-header"><a href="/python.html#python-写api接口" class="sidebar-link">python 写api接口</a></li><li class="sidebar-sub-header"><a href="/python.html#链接mysql" class="sidebar-link">链接mysql</a></li><li class="sidebar-sub-header"><a href="/python.html#数据导出excel表格" class="sidebar-link">数据导出excel表格</a></li><li class="sidebar-sub-header"><a href="/python.html#excel表格数据导入mysql" class="sidebar-link">excel表格数据导入mysql</a></li><li class="sidebar-sub-header"><a href="/python.html#数据导出txt文档" class="sidebar-link">数据导出txt文档</a></li><li class="sidebar-sub-header"><a href="/python.html#python下载腾讯，爱奇艺，优酷，土豆vip视频" class="sidebar-link">python下载腾讯，爱奇艺，优酷，土豆vip视频</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git使用</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>网页端引用video</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/sponsor.html" class="sidebar-link">CONTACT</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/sponsor.html#联系方式" class="sidebar-link">联系方式</a></li><li class="sidebar-sub-header"><a href="/sponsor.html#赞赏" class="sidebar-link">赞赏</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="pip镜像下载模块"><a href="#pip镜像下载模块" class="header-anchor">#</a> pip镜像下载模块</h2> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>pip <span class="token function">install</span> -i https://pypi.tuna.tsinghua.edu.cn/simple name
+<span class="token comment"># 常用镜像</span>
+<span class="token comment"># 豆瓣：https://pypi.douban.com/simple</span>
+<span class="token comment"># 阿里：https://mirrors.aliyun.com/pypi/simple</span>
+<span class="token comment"># 清华：https://pypi.tuna.tsinghua.edu.cn/simple</span>
+<span class="token comment"># name就是要安装的包的名字</span>
+<span class="token comment"># eg:</span>
+
+pip <span class="token function">install</span> -i https://pypi.tuna.tsinghua.edu.cn/simple xgboost
+
+<span class="token comment"># 永久修改，一劳永逸：</span>
+<span class="token comment"># Linux下，修改 ~/.pip/pip.conf (没有就创建一个文件夹及文件。文件夹要加“.”，表示是隐藏文件夹)</span>
+
+<span class="token comment"># 内容如下：</span>
+
+<span class="token punctuation">[</span>global<span class="token punctuation">]</span>
+index-url <span class="token operator">=</span> https://pypi.tuna.tsinghua.edu.cn/simple
+<span class="token punctuation">[</span>install<span class="token punctuation">]</span>
+trusted-host<span class="token operator">=</span>mirrors.aliyun.com
+<span class="token comment"># windows下，直接在user目录中创建一个pip目录，如：C:\Users\xx\pip，新建文件pip.ini。内容同上。</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h2 id="python启动本地服务"><a href="#python启动本地服务" class="header-anchor">#</a> python启动本地服务</h2> <div class="language-py line-numbers-mode"><pre class="language-py"><code>python <span class="token operator">-</span>m http<span class="token punctuation">.</span>server <span class="token number">8123</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="python3基础语法"><a href="#python3基础语法" class="header-anchor">#</a> python3基础语法</h2> <ul><li><p><a href="https://www.runoob.com/python3/python3-tutorial.html" target="_blank" rel="noopener noreferrer">菜鸟教程<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p><a href="https://www.w3school.com.cn/python/python_examples.asp" target="_blank" rel="noopener noreferrer">w3school<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li></ul> <h2 id="scrapy框架"><a href="#scrapy框架" class="header-anchor">#</a> scrapy框架</h2> <p>安装</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code>pip <span class="token function">install</span> scrapy
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="python-写api接口"><a href="#python-写api接口" class="header-anchor">#</a> python 写api接口</h2> <div class="language-py line-numbers-mode"><pre class="language-py"><code><span class="token triple-quoted-string string">'''
+@Description: 
+@Version: 
+@Autor: MrSong
+@Date: 2020-07-05 11:46:38
+@LastEditors: MrSong
+@LastEditTime: 2020-07-05 11:55:30
+'''</span>
+<span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span> request<span class="token punctuation">,</span> jsonify
+
+app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
+
+
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/testGet'</span><span class="token punctuation">,</span> methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;GET&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">calculateGet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    a <span class="token operator">=</span> request<span class="token punctuation">.</span>args<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    b <span class="token operator">=</span> request<span class="token punctuation">.</span>args<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    c <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token builtin">int</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+    res <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;result&quot;</span><span class="token punctuation">:</span> c<span class="token punctuation">}</span>
+    <span class="token keyword">return</span> jsonify<span class="token punctuation">(</span>content_type<span class="token operator">=</span><span class="token string">'application/json;charset=utf-8'</span><span class="token punctuation">,</span>
+                   reason<span class="token operator">=</span><span class="token string">'success'</span><span class="token punctuation">,</span>
+                   charset<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span>
+                   status<span class="token operator">=</span><span class="token string">'200'</span><span class="token punctuation">,</span>
+                   content<span class="token operator">=</span>res<span class="token punctuation">)</span>
+
+
+<span class="token decorator annotation punctuation">@app<span class="token punctuation">.</span>route</span><span class="token punctuation">(</span><span class="token string">'/testPost'</span><span class="token punctuation">,</span> methods<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">&quot;POST&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">calculatePost</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    params <span class="token operator">=</span> request<span class="token punctuation">.</span>form <span class="token keyword">if</span> request<span class="token punctuation">.</span>form <span class="token keyword">else</span> request<span class="token punctuation">.</span>json
+    <span class="token keyword">print</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span>
+    a <span class="token operator">=</span> params<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    b <span class="token operator">=</span> params<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    c <span class="token operator">=</span> a <span class="token operator">+</span> b
+    res <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;result&quot;</span><span class="token punctuation">:</span> c<span class="token punctuation">}</span>
+    <span class="token keyword">return</span> jsonify<span class="token punctuation">(</span>content_type<span class="token operator">=</span><span class="token string">'application/json;charset=utf-8'</span><span class="token punctuation">,</span>
+                   reason<span class="token operator">=</span><span class="token string">'success'</span><span class="token punctuation">,</span>
+                   charset<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">,</span>
+                   status<span class="token operator">=</span><span class="token string">'200'</span><span class="token punctuation">,</span>
+                   content<span class="token operator">=</span>res<span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    app<span class="token punctuation">.</span>run<span class="token punctuation">(</span>host<span class="token operator">=</span><span class="token string">'0.0.0.0'</span><span class="token punctuation">,</span> threaded<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> debug<span class="token operator">=</span><span class="token boolean">False</span><span class="token punctuation">,</span> port<span class="token operator">=</span><span class="token number">8070</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><h2 id="链接mysql"><a href="#链接mysql" class="header-anchor">#</a> 链接mysql</h2> <p>源码展示</p> <div class="language-python line-numbers-mode"><pre class="language-python"><code><span class="token triple-quoted-string string">'''
+@Description: 
+@Version: 
+@Autor: MrSong
+@Date: 2020-07-04 13:28:26
+@LastEditors: MrSong
+@LastEditTime: 2020-07-04 20:31:50
+'''</span>
+<span class="token keyword">import</span> mysql<span class="token punctuation">.</span>connector
+db <span class="token operator">=</span> mysql<span class="token punctuation">.</span>connector<span class="token punctuation">.</span>connect<span class="token punctuation">(</span>host<span class="token operator">=</span><span class="token string">&quot;ip地址&quot;</span><span class="token punctuation">,</span>
+                             user<span class="token operator">=</span><span class="token string">&quot;用户名&quot;</span><span class="token punctuation">,</span>
+                             passwd<span class="token operator">=</span><span class="token string">&quot;密码&quot;</span><span class="token punctuation">,</span>
+                             database<span class="token operator">=</span><span class="token string">&quot;数据库&quot;</span><span class="token punctuation">)</span>
+cursor <span class="token operator">=</span> db<span class="token punctuation">.</span>cursor<span class="token punctuation">(</span><span class="token punctuation">)</span>
+cursor<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">&quot;SELECT * FROM test&quot;</span><span class="token punctuation">)</span>
+data <span class="token operator">=</span> cursor<span class="token punctuation">.</span>fetchall<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 写入数据库</span>
+<span class="token keyword">def</span> <span class="token function">write_db</span><span class="token punctuation">(</span>chapter<span class="token punctuation">,</span> content<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    sql <span class="token operator">=</span> <span class="token string">&quot;INSERT INTO test (id, time) VALUES(%(id)s, %(time)s);&quot;</span>
+    param <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;id&quot;</span><span class="token punctuation">:</span> chapter<span class="token punctuation">,</span> <span class="token string">&quot;time&quot;</span><span class="token punctuation">:</span> content<span class="token punctuation">}</span>
+    cursor<span class="token punctuation">.</span>execute<span class="token punctuation">(</span>sql<span class="token punctuation">,</span> param<span class="token punctuation">)</span>
+    cursor<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">&quot;SELECT * FROM test&quot;</span><span class="token punctuation">)</span>
+    data <span class="token operator">=</span> cursor<span class="token punctuation">.</span>fetchall<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+
+
+<span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    write_db<span class="token punctuation">(</span><span class="token number">8811</span><span class="token punctuation">,</span> <span class="token number">555554441188</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    main<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    write_db<span class="token punctuation">(</span><span class="token number">12811</span><span class="token punctuation">,</span> <span class="token number">555554442200</span><span class="token punctuation">)</span>
+    db<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h2 id="数据导出excel表格"><a href="#数据导出excel表格" class="header-anchor">#</a> 数据导出excel表格</h2> <div class="language-py line-numbers-mode"><pre class="language-py"><code><span class="token keyword">import</span> pymysql
+<span class="token keyword">import</span> hashlib
+<span class="token keyword">import</span> xlwt
+<span class="token keyword">import</span> os
+
+<span class="token keyword">def</span> <span class="token function">op_mysql</span><span class="token punctuation">(</span>sql<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    mysql_info <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'host'</span><span class="token punctuation">:</span> <span class="token string">'ip地址'</span><span class="token punctuation">,</span>
+        <span class="token string">'port'</span><span class="token punctuation">:</span> <span class="token number">3306</span><span class="token punctuation">,</span>
+        <span class="token string">'password'</span><span class="token punctuation">:</span> <span class="token string">'密码'</span><span class="token punctuation">,</span>
+        <span class="token string">'user'</span><span class="token punctuation">:</span> <span class="token string">'用户名'</span><span class="token punctuation">,</span>
+        <span class="token string">'db'</span><span class="token punctuation">:</span> <span class="token string">'数据库'</span><span class="token punctuation">,</span>
+        <span class="token string">'charset'</span><span class="token punctuation">:</span> <span class="token string">'utf8'</span><span class="token punctuation">,</span>
+        <span class="token string">'autocommit'</span><span class="token punctuation">:</span> <span class="token boolean">True</span>
+    <span class="token punctuation">}</span>
+    result <span class="token operator">=</span> <span class="token string">'执行完成'</span>
+    conn <span class="token operator">=</span> pymysql<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token operator">**</span>mysql_info<span class="token punctuation">)</span>
+    <span class="token comment"># cur = conn.cursor(pymysql.cursors.DictCursor) #建立游标</span>
+    cur <span class="token operator">=</span> conn<span class="token punctuation">.</span>cursor<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 建立游标</span>
+    cur<span class="token punctuation">.</span>execute<span class="token punctuation">(</span>sql<span class="token punctuation">)</span>
+    field <span class="token operator">=</span> <span class="token punctuation">[</span>t<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token keyword">for</span> t <span class="token keyword">in</span> cur<span class="token punctuation">.</span>description<span class="token punctuation">]</span>  <span class="token comment"># 获取表里面的所有字段名</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>field<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> sql<span class="token punctuation">.</span>strip<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>startswith<span class="token punctuation">(</span><span class="token string">'select'</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># result  = cur.fetchone()</span>
+        result <span class="token operator">=</span> cur<span class="token punctuation">.</span>fetchall<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    cur<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    conn<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'所有的字段'</span><span class="token punctuation">,</span> field<span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'所有的数据'</span><span class="token punctuation">,</span> result<span class="token punctuation">)</span>
+    result <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>  <span class="token comment"># 因为返回的是元组，不能修改，所以转成list</span>
+    result<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> field<span class="token punctuation">)</span>  <span class="token comment"># 加入到最前面</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span>
+    <span class="token keyword">return</span> result
+
+
+<span class="token keyword">def</span> <span class="token function">export_excel</span><span class="token punctuation">(</span>table_name<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    sql <span class="token operator">=</span> <span class="token string">'select * from %s;'</span> <span class="token operator">%</span> table_name
+    result <span class="token operator">=</span> op_mysql<span class="token punctuation">(</span>sql<span class="token punctuation">)</span>
+    book <span class="token operator">=</span> xlwt<span class="token punctuation">.</span>Workbook<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    sheet <span class="token operator">=</span> book<span class="token punctuation">.</span>add_sheet<span class="token punctuation">(</span><span class="token string">'sheet'</span><span class="token punctuation">)</span>
+    <span class="token keyword">for</span> row<span class="token punctuation">,</span> line <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> col<span class="token punctuation">,</span> t <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>line<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            sheet<span class="token punctuation">.</span>write<span class="token punctuation">(</span>row<span class="token punctuation">,</span> col<span class="token punctuation">,</span> t<span class="token punctuation">)</span>
+    createFile<span class="token punctuation">(</span><span class="token string">&quot;E:\pythonExport&quot;</span><span class="token punctuation">)</span>
+    book<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'%s.xls'</span> <span class="token operator">%</span> table_name<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 创建文件夹</span>
+<span class="token keyword">def</span> <span class="token function">createFile</span><span class="token punctuation">(</span>file_path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> os<span class="token punctuation">.</span>path<span class="token punctuation">.</span>exists<span class="token punctuation">(</span>file_path<span class="token punctuation">)</span> <span class="token keyword">is</span> <span class="token boolean">False</span><span class="token punctuation">:</span>
+        os<span class="token punctuation">.</span>makedirs<span class="token punctuation">(</span>file_path<span class="token punctuation">)</span>
+    <span class="token comment"># 切换路径至上面创建的文件夹</span>
+    os<span class="token punctuation">.</span>chdir<span class="token punctuation">(</span>file_path<span class="token punctuation">)</span>
+
+
+export_excel<span class="token punctuation">(</span><span class="token string">'test'</span><span class="token punctuation">)</span>
+
+book <span class="token operator">=</span> xlwt<span class="token punctuation">.</span>Workbook<span class="token punctuation">(</span><span class="token punctuation">)</span>
+sheet <span class="token operator">=</span> book<span class="token punctuation">.</span>add_sheet<span class="token punctuation">(</span><span class="token string">'sheet'</span><span class="token punctuation">)</span>
+l <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span><span class="token number">11</span><span class="token punctuation">,</span> <span class="token string">'dsk'</span><span class="token punctuation">,</span> <span class="token string">'xxdfsdfsd'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'ldd'</span><span class="token punctuation">,</span> <span class="token string">'xxdfsdfsd'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'lsdd'</span><span class="token punctuation">,</span> <span class="token string">'xxdfsdfsd'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'lsd1'</span><span class="token punctuation">,</span> <span class="token string">'xxdfsdfsd'</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+
+<span class="token comment"># 方法一：</span>
+<span class="token comment"># row = 0#行号</span>
+<span class="token comment"># for line in l: #外面这个循环，每循环一次，就写excel里面一行</span>
+<span class="token comment">#     # col = 0#列号   [1,'dsk','xxdfsdfsd',0]</span>
+<span class="token comment">#     col = 0</span>
+<span class="token comment">#     for t in line:#里面这个循环是控制列的，每循环一次就写一列</span>
+<span class="token comment">#         sheet.write(row,col,t)</span>
+<span class="token comment">#         col+=1</span>
+<span class="token comment">#     row+=1</span>
+<span class="token comment">#</span>
+
+<span class="token comment"># 方法二：</span>
+<span class="token keyword">for</span> row<span class="token punctuation">,</span> line <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> col<span class="token punctuation">,</span> t <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>line<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        sheet<span class="token punctuation">.</span>write<span class="token punctuation">(</span>row<span class="token punctuation">,</span> col<span class="token punctuation">,</span> t<span class="token punctuation">)</span>
+createFile<span class="token punctuation">(</span><span class="token string">&quot;E:\pythonExportTest&quot;</span><span class="token punctuation">)</span>
+book<span class="token punctuation">.</span>save<span class="token punctuation">(</span><span class="token string">'user.xls'</span><span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br></div></div><h2 id="excel表格数据导入mysql"><a href="#excel表格数据导入mysql" class="header-anchor">#</a> excel表格数据导入mysql</h2> <div class="language-py line-numbers-mode"><pre class="language-py"><code><span class="token triple-quoted-string string">'''
+@Description: 
+@Version: 
+@Autor: MrSong
+@Date: 2020-07-04 20:54:03
+@LastEditors: MrSong
+@LastEditTime: 2020-07-04 21:18:29
+'''</span>
+<span class="token keyword">import</span> pymysql
+<span class="token comment"># xlrd 为 python 中读取 excel 的库，支持.xls 和 .xlsx 文件</span>
+<span class="token keyword">import</span> xlrd
+
+<span class="token keyword">from</span> builtins <span class="token keyword">import</span> <span class="token builtin">int</span>
+
+
+<span class="token comment"># cur 是数据库的游标链接，path 是 excel 文件的路径</span>
+<span class="token keyword">def</span> <span class="token function">importExcelToMysql</span><span class="token punctuation">(</span>cur<span class="token punctuation">,</span> path<span class="token punctuation">)</span><span class="token punctuation">:</span>
+
+    <span class="token comment"># xlrd版本</span>
+    <span class="token comment"># 读取excel文件</span>
+    workbook <span class="token operator">=</span> xlrd<span class="token punctuation">.</span>open_workbook<span class="token punctuation">(</span>path<span class="token punctuation">)</span>
+    sheets <span class="token operator">=</span> workbook<span class="token punctuation">.</span>sheet_names<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    worksheet <span class="token operator">=</span> workbook<span class="token punctuation">.</span>sheet_by_name<span class="token punctuation">(</span>sheets<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># xlrd版本</span>
+    <span class="token comment"># 将表中数据读到 sqlstr 数组中</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> worksheet<span class="token punctuation">.</span>nrows<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        row <span class="token operator">=</span> worksheet<span class="token punctuation">.</span>row<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+
+        sqlstr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> worksheet<span class="token punctuation">.</span>ncols<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            sqlstr<span class="token punctuation">.</span>append<span class="token punctuation">(</span>worksheet<span class="token punctuation">.</span>cell_value<span class="token punctuation">(</span>i<span class="token punctuation">,</span> j<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>sqlstr<span class="token punctuation">)</span>
+        cur<span class="token punctuation">.</span>execute<span class="token punctuation">(</span>
+            <span class="token string">&quot;insert into student(姓名, 语文, 数学, 英语) values(%s, %s, %s, %s)&quot;</span><span class="token punctuation">,</span>
+            sqlstr<span class="token punctuation">)</span>
+
+
+<span class="token comment"># 输出数据库中内容</span>
+<span class="token keyword">def</span> <span class="token function">readTable</span><span class="token punctuation">(</span>cursor<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># 选择全部</span>
+    cursor<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">&quot;select * from student&quot;</span><span class="token punctuation">)</span>
+    <span class="token comment"># 获得返回值，返回多条记录，若没有结果则返回()</span>
+    results <span class="token operator">=</span> cursor<span class="token punctuation">.</span>fetchall<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> results<span class="token punctuation">.</span>__len__<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>results<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> end<span class="token operator">=</span><span class="token string">'\t'</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    <span class="token comment"># 和数据库建立连接</span>
+    conn <span class="token operator">=</span> pymysql<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token string">'ip地址'</span><span class="token punctuation">,</span> <span class="token string">'用户名'</span><span class="token punctuation">,</span> <span class="token string">'密码'</span><span class="token punctuation">,</span> charset<span class="token operator">=</span><span class="token string">'utf8'</span><span class="token punctuation">)</span>
+    <span class="token comment"># 创建游标链接</span>
+    cur <span class="token operator">=</span> conn<span class="token punctuation">.</span>cursor<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># 新建一个database</span>
+    cur<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">&quot;drop database if exists students&quot;</span><span class="token punctuation">)</span>
+    cur<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">&quot;create database students&quot;</span><span class="token punctuation">)</span>
+    <span class="token comment"># 选择 students 这个数据库</span>
+    cur<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">&quot;use students&quot;</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># sql中的内容为创建一个名为student的表</span>
+    sql <span class="token operator">=</span> <span class="token triple-quoted-string string">&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS `student` (
+                `姓名` VARCHAR (20),
+                `语文` INT,
+                `数学` INT,
+                `英语` INT
+              )&quot;&quot;&quot;</span>
+    <span class="token comment"># 如果存在student这个表则删除</span>
+    cur<span class="token punctuation">.</span>execute<span class="token punctuation">(</span><span class="token string">&quot;drop table if exists student&quot;</span><span class="token punctuation">)</span>
+    <span class="token comment"># 创建表</span>
+    cur<span class="token punctuation">.</span>execute<span class="token punctuation">(</span>sql<span class="token punctuation">)</span>
+
+    <span class="token comment"># 将 excel 中的数据导入 数据库中</span>
+    importExcelToMysql<span class="token punctuation">(</span>cur<span class="token punctuation">,</span> <span class="token string">&quot;../student.xls&quot;</span><span class="token punctuation">)</span>
+    readTable<span class="token punctuation">(</span>cur<span class="token punctuation">)</span>
+
+    <span class="token comment"># 关闭游标链接</span>
+    cur<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    conn<span class="token punctuation">.</span>commit<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment"># 关闭数据库服务器连接，释放内存</span>
+    conn<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br></div></div><h2 id="数据导出txt文档"><a href="#数据导出txt文档" class="header-anchor">#</a> 数据导出txt文档</h2> <div class="language-py line-numbers-mode"><pre class="language-py"><code><span class="token triple-quoted-string string">'''
+@Description: 
+@Version: 
+@Autor: MrSong
+@Date: 2020-07-04 19:42:36
+@LastEditors: MrSong
+@LastEditTime: 2020-07-04 20:45:17
+'''</span>
+<span class="token comment">#/usr/bin/python</span>
+<span class="token keyword">import</span> os
+<span class="token keyword">import</span> datetime
+<span class="token keyword">import</span> time
+<span class="token keyword">import</span> sys
+<span class="token keyword">import</span> importlib
+importlib<span class="token punctuation">.</span><span class="token builtin">reload</span><span class="token punctuation">(</span>sys<span class="token punctuation">)</span>
+<span class="token keyword">import</span> pymysql
+
+
+<span class="token keyword">def</span> <span class="token function">op_mysql</span><span class="token punctuation">(</span>sql<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    t <span class="token operator">=</span> datetime<span class="token punctuation">.</span>datetime<span class="token punctuation">.</span>now<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;begin:&quot;</span><span class="token punctuation">,</span> t<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">)</span> <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        str_time <span class="token operator">=</span> sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        y <span class="token operator">=</span> t<span class="token punctuation">.</span>year
+        m <span class="token operator">=</span> t<span class="token punctuation">.</span>month
+        d <span class="token operator">=</span> t<span class="token punctuation">.</span>day
+        str_time <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">(</span>y<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;-&quot;</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&quot;-&quot;</span> <span class="token operator">+</span> <span class="token builtin">str</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span>
+    <span class="token comment"># print(str_time.strftime('%Y-%m-%d %H:%M:%S.%f'))</span>
+    mysql_info <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'host'</span><span class="token punctuation">:</span> <span class="token string">'ip地址'</span><span class="token punctuation">,</span>
+        <span class="token string">'port'</span><span class="token punctuation">:</span> <span class="token number">3306</span><span class="token punctuation">,</span>
+        <span class="token string">'password'</span><span class="token punctuation">:</span> <span class="token string">'密码'</span><span class="token punctuation">,</span>
+        <span class="token string">'user'</span><span class="token punctuation">:</span> <span class="token string">'用户名'</span><span class="token punctuation">,</span>
+        <span class="token string">'db'</span><span class="token punctuation">:</span> <span class="token string">'数据库'</span><span class="token punctuation">,</span>
+        <span class="token string">'charset'</span><span class="token punctuation">:</span> <span class="token string">'utf8'</span><span class="token punctuation">,</span>
+        <span class="token string">'autocommit'</span><span class="token punctuation">:</span> <span class="token boolean">True</span>
+    <span class="token punctuation">}</span>
+    result <span class="token operator">=</span> <span class="token string">'执行完成'</span>
+    conn <span class="token operator">=</span> pymysql<span class="token punctuation">.</span>connect<span class="token punctuation">(</span><span class="token operator">**</span>mysql_info<span class="token punctuation">)</span>
+    <span class="token comment"># cur = conn.cursor(pymysql.cursors.DictCursor) #建立游标</span>
+    cur <span class="token operator">=</span> conn<span class="token punctuation">.</span>cursor<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># 建立游标</span>
+    cur<span class="token punctuation">.</span>execute<span class="token punctuation">(</span>sql<span class="token punctuation">)</span>
+    <span class="token keyword">try</span><span class="token punctuation">:</span>
+        rows <span class="token operator">=</span> cur<span class="token punctuation">.</span>fetchall<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span>rows<span class="token punctuation">)</span>
+        field <span class="token operator">=</span> <span class="token punctuation">[</span>t<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token keyword">for</span> t <span class="token keyword">in</span> cur<span class="token punctuation">.</span>description<span class="token punctuation">]</span>
+        rows <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>rows<span class="token punctuation">)</span>
+        rows<span class="token punctuation">.</span>insert<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> field<span class="token punctuation">)</span>
+        <span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'record.txt'</span><span class="token punctuation">,</span> <span class="token string">'w'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> fout<span class="token punctuation">:</span>
+            <span class="token comment">#print &gt;&gt;fout, rows</span>
+            <span class="token keyword">for</span> row <span class="token keyword">in</span> rows<span class="token punctuation">:</span>
+                t <span class="token operator">=</span> row<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+                fout<span class="token punctuation">.</span>write<span class="token punctuation">(</span><span class="token string">'%s,%s\n'</span> <span class="token operator">%</span> <span class="token punctuation">(</span>t<span class="token punctuation">,</span> row<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        conn<span class="token punctuation">.</span>close<span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">except</span> <span class="token punctuation">(</span>ValueError<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;参数没有包含数字\n&quot;</span><span class="token punctuation">,</span> ValueError<span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> __name__ <span class="token operator">==</span> <span class="token string">'__main__'</span><span class="token punctuation">:</span>
+    sql <span class="token operator">=</span> <span class="token string">&quot;SELECT * FROM test;&quot;</span>
+    op_mysql<span class="token punctuation">(</span>sql<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br></div></div><h2 id="python下载腾讯，爱奇艺，优酷，土豆vip视频"><a href="#python下载腾讯，爱奇艺，优酷，土豆vip视频" class="header-anchor">#</a> python下载腾讯，爱奇艺，优酷，土豆vip视频</h2> <ul><li>敬请期待，更新中</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/22/2020, 11:59:24 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/liunx.html" class="prev">
+        Liunx Or Windows
+      </a></span> <span class="next"><a href="/git.html">
+        git命令
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><div></div></div></div>
+    <script src="/assets/js/app.3290b558.js" defer></script><script src="/assets/js/2.d8720c94.js" defer></script><script src="/assets/js/15.8859d65b.js" defer></script>
+  </body>
+</html>
