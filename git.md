@@ -55,6 +55,32 @@ git config --global push.default matching
 git credential-manager uninstall
 ```
 
+## 配置用户名指令
+
+```sh
+git config --global user.name 用户名
+```
+
+## 配置邮箱指令
+
+```sh
+git config --global user.email 邮箱地址
+```
+
+## 查看配置的用户名和邮箱
+
+```sh
+git config --list
+```
+
+## 查看指定配置项的值
+
+```sh
+git config user.name
+
+git config user.email
+```
+
 ## git 编辑模式退出
 
 ```sh
