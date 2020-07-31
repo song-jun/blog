@@ -115,3 +115,25 @@ scp -r a.js test
 ```bash , shell
 clear
 ```
+
+- 列举所有启用的端口
+
+```bash , shell
+#所有活动的TCP连接，以及正在监听的TCP和UDP端口
+netstat -anp
+
+#查看当前所有tcp端口
+netstat -ntlp
+```
+
+- 查询端口对应的程序
+
+```bash , shell
+netstat -anp | grep 80
+```
+
+- 关闭端口
+
+```bash , shell
+kill -9 80
+```
